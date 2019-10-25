@@ -110,8 +110,10 @@ def create_sim(config_filename, C, density, pattern, temperature=1):
 
     velocity_rescale = DYNAMOD + " {} -r {} -Z -o {}".format(config_filename, temperature, config_filename)
     call(velocity_rescale)
+
+if __name__ == "__main__":
     
-## pattern = "ABC" -> FCC
-## pattern = "AB" -> HCP
-create_sim("config.xml", 4, 1.2, "ABCBCBAB")
+    ## pattern = "ABC" -> FCC
+    ## pattern = "AB" -> HCP
+    create_sim("config.xml", 4, 1.2, "ABCBCBAB")
     
