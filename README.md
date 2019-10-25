@@ -2,7 +2,7 @@
 
 ABPacker is a pattern driven sphere packer. As it is currently written, the code produces config files for the open-source event driven particle simulator [DynamO](http://dynamomd.org/). However the code could be easily modified for other uses
 
-# Exmaple usage
+# Example usage
 
 ```shell
 $ python3
