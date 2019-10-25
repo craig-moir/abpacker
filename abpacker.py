@@ -25,7 +25,7 @@ def call(command):
     print(command)
     sp.call(command, shell=True)
 
-def create_sim(config_filename, C, density, pattern, temperature=1):
+def create_config(config_filename, C, density, pattern, temperature=1):
     # print("Make sure that 2 letters in the pattern are not together i.e. \"BB\"!")
     if not 2*C % len(pattern) == 0:
         print("The length of the pattern must be set such that 2*C % len(pattern) == 0 otherwise the last layer will overlap")
@@ -115,5 +115,5 @@ if __name__ == "__main__":
     
     ## pattern = "ABC" -> FCC
     ## pattern = "AB" -> HCP
-    create_sim("config.xml", 4, 1.2, "ABCBCBAB")
+    create_config("config.xml", 4, 1.2, "ABCBCBAB")
     
