@@ -26,7 +26,7 @@ def call(command):
     sp.call(command, shell=True)
 
 def create_sim(config_filename, C, density, pattern, temperature=1):
-    print("Make sure that 2 letters in the pattern are not together i.e. \"BB\"!")
+    # print("Make sure that 2 letters in the pattern are not together i.e. \"BB\"!")
     if not 2*C % len(pattern) == 0:
         print("The length of the pattern must be set such that 2*C % len(pattern) == 0 otherwise the last layer will overlap")
         exit()
@@ -60,7 +60,7 @@ def create_sim(config_filename, C, density, pattern, temperature=1):
         for iy in range(C):
             for iz in range(C*2):
                 row_type = pattern[count%len(pattern)]
-                print(row_type)
+                # print(row_type)
                 count += 1
 
                 if row_type == "A":
