@@ -30,7 +30,7 @@ We can likewise create a simulation with **HCP** packing by specifying a packing
 >>> creat_config("config.xml", 7, 1.2, "AB")
 ```
 
-We can create any pattern that we want as long as we make sure that we never create a packing pattern with two un-shifted layers next to each other i.e. `"ABBC"`. This will be invalid becuase of hte two B rows that are adjacent to eachother. We must also be careful to make sure that the length of the packing pattern is equal to a multiple of the number of packing cells in the z direction (bearing in mind that this will be double the number of specified packing cells).
+We can create any pattern that we want as long as we make sure that we never create a packing pattern with two un-shifted layers next to each other i.e. `"ABBC"`. This will be invalid becuase of the two B rows that are adjacent to eachother. We must also be careful to make sure that the length of the packing pattern is equal to a multiple of the number of packing cells in the z direction (bearing in mind that this will be double the number of specified packing cells).
 
 An example of a more complicated packing pattern is 
 
